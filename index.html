@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-muted">Bookmarker</h1>
+      <hr />
+      <div class="inputs-box text-center py-5">
+        <h3 class="mb-3">Bookmark your favorite sites</h3>
+        <h5 class="mb-3">Site Name</h5>
+        <input
+          type="text"
+          class="form-control w-75 m-auto"
+          id="bookmark-name"
+          placeholder="Bookmark Name"
+        />
+        <div class="w-75 m-auto bg-danger text-center visually-hidden" id="invalidName">Name is Required</div>
+        <div class="w-75 m-auto bg-danger text-center visually-hidden" id="nameExist">this name already exist</div>
+        <h5 class="my-3">Site URL</h5>
+        <input
+          type="text"
+          class="form-control w-75 m-auto"
+          id="website-url"
+          placeholder="Website URL"
+        />
+        <div class="w-75 m-auto bg-danger text-center visually-hidden" id="invalidURL">Url is Required</div>
+        <div class="w-75 m-auto bg-danger text-center visually-hidden" id="urlExist">this url already exist</div>
+        <button type="button" onclick="addBookMark(),clearInputs()" class="btn btn-primary mt-3">Submit</button>
+      </div>
+      <div id="bookmarks-area">
+       
+      </div>
+      <hr />
+      <p class="text-muted">&copy;2019 Bookmarker Inc.</p>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
